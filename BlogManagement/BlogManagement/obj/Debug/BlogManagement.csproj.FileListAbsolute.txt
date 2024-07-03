@@ -1,0 +1,255 @@
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\BlogManagement.dll.config
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\BlogManagement.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\BlogManagement.pdb
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\csc.exe
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\csc.exe.config
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\csc.rsp
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\csi.exe
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\csi.exe.config
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\csi.rsp
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.AppContext.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Collections.Immutable.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Console.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Globalization.Calendars.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.IO.Compression.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.IO.FileSystem.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Net.Http.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Net.Sockets.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Reflection.Metadata.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.ValueTuple.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Xml.XPath.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\vbc.exe
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\vbc.exe.config
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\vbc.rsp
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\VBCSCompiler.exe
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\roslyn\VBCSCompiler.exe.config
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\Antlr3.Runtime.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\Microsoft.Web.Infrastructure.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\Newtonsoft.Json.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\System.Web.Helpers.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\System.Web.Mvc.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\System.Web.Optimization.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\System.Web.Razor.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\System.Web.WebPages.Deployment.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\System.Web.WebPages.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\System.Web.WebPages.Razor.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\WebGrease.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\System.Web.Helpers.xml
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\System.Web.Mvc.xml
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\System.Web.Optimization.xml
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\System.Web.Razor.xml
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\System.Web.WebPages.xml
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\System.Web.WebPages.Deployment.xml
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\System.Web.WebPages.Razor.xml
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\Newtonsoft.Json.xml
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\Antlr3.Runtime.pdb
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Tanvir\VS code\BlogManagement\BlogManagement\obj\Debug\BlogManagement.csproj.AssemblyReference.cache
+D:\Tanvir\VS code\BlogManagement\BlogManagement\obj\Debug\BlogManagement.csproj.CoreCompileInputs.cache
+D:\Tanvir\VS code\BlogManagement\BlogManagement\obj\Debug\BlogMana.D4C6AA65.Up2Date
+D:\Tanvir\VS code\BlogManagement\BlogManagement\obj\Debug\BlogManagement.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\obj\Debug\BlogManagement.pdb
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\EntityFramework.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\EntityFramework.SqlServer.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\EntityFramework.xml
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\EntityFramework.SqlServer.xml
+E:\FTP\BlogManagement\BlogManagement\bin\BlogManagement.dll.config
+E:\FTP\BlogManagement\BlogManagement\bin\BlogManagement.dll
+E:\FTP\BlogManagement\BlogManagement\bin\BlogManagement.pdb
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\csc.exe
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\csc.exe.config
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\csc.rsp
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\csi.exe
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\csi.exe.config
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\csi.rsp
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\Microsoft.Managed.Core.targets
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.AppContext.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Collections.Immutable.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Console.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Globalization.Calendars.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.IO.Compression.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.IO.FileSystem.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Net.Http.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Net.Sockets.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Reflection.Metadata.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.ValueTuple.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Xml.XmlDocument.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Xml.XPath.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\vbc.exe
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\vbc.exe.config
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\vbc.rsp
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\VBCSCompiler.exe
+E:\FTP\BlogManagement\BlogManagement\bin\roslyn\VBCSCompiler.exe.config
+E:\FTP\BlogManagement\BlogManagement\bin\Antlr3.Runtime.dll
+E:\FTP\BlogManagement\BlogManagement\bin\AutoMapper.dll
+E:\FTP\BlogManagement\BlogManagement\bin\EntityFramework.dll
+E:\FTP\BlogManagement\BlogManagement\bin\EntityFramework.SqlServer.dll
+E:\FTP\BlogManagement\BlogManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\FTP\BlogManagement\BlogManagement\bin\Microsoft.Web.Infrastructure.dll
+E:\FTP\BlogManagement\BlogManagement\bin\Newtonsoft.Json.dll
+E:\FTP\BlogManagement\BlogManagement\bin\System.Web.Helpers.dll
+E:\FTP\BlogManagement\BlogManagement\bin\System.Web.Mvc.dll
+E:\FTP\BlogManagement\BlogManagement\bin\System.Web.Optimization.dll
+E:\FTP\BlogManagement\BlogManagement\bin\System.Web.Razor.dll
+E:\FTP\BlogManagement\BlogManagement\bin\System.Web.WebPages.Deployment.dll
+E:\FTP\BlogManagement\BlogManagement\bin\System.Web.WebPages.dll
+E:\FTP\BlogManagement\BlogManagement\bin\System.Web.WebPages.Razor.dll
+E:\FTP\BlogManagement\BlogManagement\bin\WebGrease.dll
+E:\FTP\BlogManagement\BlogManagement\bin\AutoMapper.xml
+E:\FTP\BlogManagement\BlogManagement\bin\EntityFramework.xml
+E:\FTP\BlogManagement\BlogManagement\bin\EntityFramework.SqlServer.xml
+E:\FTP\BlogManagement\BlogManagement\bin\System.Web.Helpers.xml
+E:\FTP\BlogManagement\BlogManagement\bin\System.Web.Mvc.xml
+E:\FTP\BlogManagement\BlogManagement\bin\System.Web.Optimization.xml
+E:\FTP\BlogManagement\BlogManagement\bin\System.Web.Razor.xml
+E:\FTP\BlogManagement\BlogManagement\bin\System.Web.WebPages.xml
+E:\FTP\BlogManagement\BlogManagement\bin\System.Web.WebPages.Deployment.xml
+E:\FTP\BlogManagement\BlogManagement\bin\System.Web.WebPages.Razor.xml
+E:\FTP\BlogManagement\BlogManagement\bin\Newtonsoft.Json.xml
+E:\FTP\BlogManagement\BlogManagement\bin\Antlr3.Runtime.pdb
+E:\FTP\BlogManagement\BlogManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\FTP\BlogManagement\BlogManagement\obj\Debug\BlogManagement.csproj.AssemblyReference.cache
+E:\FTP\BlogManagement\BlogManagement\obj\Debug\BlogManagement.csproj.CoreCompileInputs.cache
+E:\FTP\BlogManagement\BlogManagement\obj\Debug\BlogMana.D4C6AA65.Up2Date
+E:\FTP\BlogManagement\BlogManagement\obj\Debug\BlogManagement.dll
+E:\FTP\BlogManagement\BlogManagement\obj\Debug\BlogManagement.pdb
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\AutoMapper.dll
+D:\Tanvir\VS code\BlogManagement\BlogManagement\bin\AutoMapper.xml
+E:\FTP\New Folder\BlogManagement\BlogManagement\obj\Debug\BlogManagement.csproj.AssemblyReference.cache
+E:\FTP\New Folder\BlogManagement\BlogManagement\obj\Debug\BlogManagement.csproj.CoreCompileInputs.cache
+E:\FTP\New Folder\BlogManagement\BlogManagement\obj\Debug\BlogManagement.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\obj\Debug\BlogManagement.pdb
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\BlogManagement.dll.config
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\BlogManagement.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\BlogManagement.pdb
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\csc.exe
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\csc.exe.config
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\csc.rsp
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\csi.exe
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\csi.exe.config
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\csi.rsp
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\Microsoft.Managed.Core.targets
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.AppContext.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Collections.Immutable.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Console.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Globalization.Calendars.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.IO.Compression.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.IO.FileSystem.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Net.Http.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Net.Sockets.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Reflection.Metadata.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.ValueTuple.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Xml.XmlDocument.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Xml.XPath.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\vbc.exe
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\vbc.exe.config
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\vbc.rsp
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\VBCSCompiler.exe
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\roslyn\VBCSCompiler.exe.config
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\Antlr3.Runtime.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\AutoMapper.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\EntityFramework.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\EntityFramework.SqlServer.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\Microsoft.Web.Infrastructure.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\Newtonsoft.Json.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\System.Web.Helpers.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\System.Web.Mvc.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\System.Web.Optimization.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\System.Web.Razor.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\System.Web.WebPages.Deployment.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\System.Web.WebPages.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\System.Web.WebPages.Razor.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\WebGrease.dll
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\AutoMapper.xml
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\EntityFramework.xml
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\EntityFramework.SqlServer.xml
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\System.Web.Helpers.xml
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\System.Web.Mvc.xml
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\System.Web.Optimization.xml
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\System.Web.Razor.xml
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\System.Web.WebPages.xml
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\System.Web.WebPages.Deployment.xml
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\System.Web.WebPages.Razor.xml
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\Newtonsoft.Json.xml
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\Antlr3.Runtime.pdb
+E:\FTP\New Folder\BlogManagement\BlogManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\FTP\New Folder\BlogManagement\BlogManagement\obj\Debug\BlogMana.D4C6AA65.Up2Date

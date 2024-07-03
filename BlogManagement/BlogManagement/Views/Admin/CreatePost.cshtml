@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "CreatePost";
+    Layout = "~/Views/Shared/_OuterLayout.cshtml";
+}
+
+<center>
+    <div class="container w-50">
+        <font size="6">Create New Post</font>
+        <hr />
+    </div>
+</center>
+<div class="container container-fluid">
+    <form method="post">
+        <div>
+            Post Title:
+            <input type="text" class="form-control" name="PostTitle" placeholder="Enter your post title" value="@Model.PostTitle"/>
+            <span class="text-danger">@Html.ValidationMessage("PostTitle")</span>
+        </div>
+        <div>
+            Post Body:
+            <textarea class="form-control" name="PostBody" placeholder="Enter your post body">@Model.PostBody</textarea>
+            <span class="text-danger">@Html.ValidationMessage("PostBody")</span>
+        </div>
+        <br />
+        <div>
+            <input type="submit" class="btn btn-outline-primary" value="Create New Post" />
+        </div>
+    </form>
+</div>
+

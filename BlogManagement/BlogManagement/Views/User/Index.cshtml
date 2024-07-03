@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_OuterLayout.cshtml";
+}
+
+<center>
+    <div class="container w-50">
+        <font size="6">User Dashboard</font>
+        <hr />
+        <br />
+    </div>
+</center>
+@if (TempData["Msg"] != null)
+{
+    <div>
+        <div class="alert alert-danger">@TempData["Msg"]</div>
+    </div>
+}
+<table class="table">
+    <tr>
+        <th>Post Title</th>
+        <th>Post Details</th>
+    </tr>
+    @foreach (var i in Model)
+    {
+        <tr>
+
+            <td> <a href="/User/ViewPost/@i.PostId">@i.PostTitle</a></td>
+            <td>@i.PostBody</td>
+        </tr>
+
+    }
+</table>
+<div>
+    <a class="btn btn-danger" href="/User/Logout">Logout</a>
+</div>
+

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BlogManagementDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CommentInfo">
+    <Key>
+      <PropertyRef Name="CommentId" />
+    </Key>
+    <Property Name="CommentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CommentDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CommentTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CommentUser" Type="Int32" Nullable="false" />
+    <Property Name="PostId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PostInfo" Relationship="Self.FK_CommentInfo_PostInfo" FromRole="CommentInfo" ToRole="PostInfo" />
+    <NavigationProperty Name="UserInfo" Relationship="Self.FK_CommentInfo_UserInfo" FromRole="CommentInfo" ToRole="UserInfo" />
+  </EntityType>
+  <EntityType Name="PostInfo">
+    <Key>
+      <PropertyRef Name="PostId" />
+    </Key>
+    <Property Name="PostId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PostTitle" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PostBody" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PostDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="PostStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="CommentInfoes" Relationship="Self.FK_CommentInfo_PostInfo" FromRole="PostInfo" ToRole="CommentInfo" />
+    <NavigationProperty Name="UserInfo" Relationship="Self.FK_PostInfo_UserInfo" FromRole="PostInfo" ToRole="UserInfo" />
+    <NavigationProperty Name="ReactInfoes" Relationship="Self.FK_ReactInfo_PostInfo" FromRole="PostInfo" ToRole="ReactInfo" />
+  </EntityType>
+  <EntityType Name="ReactInfo">
+    <Key>
+      <PropertyRef Name="ReactId" />
+    </Key>
+    <Property Name="ReactId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Like" Type="Int32" Nullable="false" />
+    <Property Name="DisLike" Type="Int32" Nullable="false" />
+    <Property Name="PostId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PostInfo" Relationship="Self.FK_ReactInfo_PostInfo" FromRole="ReactInfo" ToRole="PostInfo" />
+  </EntityType>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="CommentInfoes" Relationship="Self.FK_CommentInfo_UserInfo" FromRole="UserInfo" ToRole="CommentInfo" />
+    <NavigationProperty Name="PostInfoes" Relationship="Self.FK_PostInfo_UserInfo" FromRole="UserInfo" ToRole="PostInfo" />
+  </EntityType>
+  <Association Name="FK_CommentInfo_PostInfo">
+    <End Role="PostInfo" Type="Self.PostInfo" Multiplicity="1" />
+    <End Role="CommentInfo" Type="Self.CommentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PostInfo">
+        <PropertyRef Name="PostId" />
+      </Principal>
+      <Dependent Role="CommentInfo">
+        <PropertyRef Name="PostId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CommentInfo_UserInfo">
+    <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+    <End Role="CommentInfo" Type="Self.CommentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="CommentInfo">
+        <PropertyRef Name="CommentUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PostInfo_UserInfo">
+    <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+    <End Role="PostInfo" Type="Self.PostInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="PostInfo">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReactInfo_PostInfo">
+    <End Role="PostInfo" Type="Self.PostInfo" Multiplicity="1" />
+    <End Role="ReactInfo" Type="Self.ReactInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PostInfo">
+        <PropertyRef Name="PostId" />
+      </Principal>
+      <Dependent Role="ReactInfo">
+        <PropertyRef Name="PostId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BlogManagementDbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CommentInfoes" EntityType="Self.CommentInfo" />
+    <EntitySet Name="PostInfoes" EntityType="Self.PostInfo" />
+    <EntitySet Name="ReactInfoes" EntityType="Self.ReactInfo" />
+    <EntitySet Name="UserInfoes" EntityType="Self.UserInfo" />
+    <AssociationSet Name="FK_CommentInfo_PostInfo" Association="Self.FK_CommentInfo_PostInfo">
+      <End Role="PostInfo" EntitySet="PostInfoes" />
+      <End Role="CommentInfo" EntitySet="CommentInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CommentInfo_UserInfo" Association="Self.FK_CommentInfo_UserInfo">
+      <End Role="UserInfo" EntitySet="UserInfoes" />
+      <End Role="CommentInfo" EntitySet="CommentInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PostInfo_UserInfo" Association="Self.FK_PostInfo_UserInfo">
+      <End Role="UserInfo" EntitySet="UserInfoes" />
+      <End Role="PostInfo" EntitySet="PostInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReactInfo_PostInfo" Association="Self.FK_ReactInfo_PostInfo">
+      <End Role="PostInfo" EntitySet="PostInfoes" />
+      <End Role="ReactInfo" EntitySet="ReactInfoes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

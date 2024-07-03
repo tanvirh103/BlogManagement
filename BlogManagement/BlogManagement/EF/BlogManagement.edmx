@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BlogManagementDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CommentInfo">
+          <Key>
+            <PropertyRef Name="CommentId" />
+          </Key>
+          <Property Name="CommentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CommentDetails" Type="varchar(max)" Nullable="false" />
+          <Property Name="CommentTime" Type="datetime" Nullable="false" />
+          <Property Name="CommentUser" Type="int" Nullable="false" />
+          <Property Name="PostId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PostInfo">
+          <Key>
+            <PropertyRef Name="PostId" />
+          </Key>
+          <Property Name="PostId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PostTitle" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="PostBody" Type="varchar(max)" Nullable="false" />
+          <Property Name="PostDate" Type="date" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="PostStatus" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ReactInfo">
+          <Key>
+            <PropertyRef Name="ReactId" />
+          </Key>
+          <Property Name="ReactId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Like" Type="int" Nullable="false" />
+          <Property Name="DisLike" Type="int" Nullable="false" />
+          <Property Name="PostId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserInfo">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FullName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Phone" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Role" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_CommentInfo_PostInfo">
+          <End Role="PostInfo" Type="Self.PostInfo" Multiplicity="1" />
+          <End Role="CommentInfo" Type="Self.CommentInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PostInfo">
+              <PropertyRef Name="PostId" />
+            </Principal>
+            <Dependent Role="CommentInfo">
+              <PropertyRef Name="PostId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CommentInfo_UserInfo">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="CommentInfo" Type="Self.CommentInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="CommentInfo">
+              <PropertyRef Name="CommentUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PostInfo_UserInfo">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="PostInfo" Type="Self.PostInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="PostInfo">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ReactInfo_PostInfo">
+          <End Role="PostInfo" Type="Self.PostInfo" Multiplicity="1" />
+          <End Role="ReactInfo" Type="Self.ReactInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PostInfo">
+              <PropertyRef Name="PostId" />
+            </Principal>
+            <Dependent Role="ReactInfo">
+              <PropertyRef Name="PostId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BlogManagementDbModelStoreContainer">
+          <EntitySet Name="CommentInfo" EntityType="Self.CommentInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PostInfo" EntityType="Self.PostInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ReactInfo" EntityType="Self.ReactInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserInfo" EntityType="Self.UserInfo" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_CommentInfo_PostInfo" Association="Self.FK_CommentInfo_PostInfo">
+            <End Role="PostInfo" EntitySet="PostInfo" />
+            <End Role="CommentInfo" EntitySet="CommentInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CommentInfo_UserInfo" Association="Self.FK_CommentInfo_UserInfo">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="CommentInfo" EntitySet="CommentInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PostInfo_UserInfo" Association="Self.FK_PostInfo_UserInfo">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="PostInfo" EntitySet="PostInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ReactInfo_PostInfo" Association="Self.FK_ReactInfo_PostInfo">
+            <End Role="PostInfo" EntitySet="PostInfo" />
+            <End Role="ReactInfo" EntitySet="ReactInfo" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BlogManagementDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CommentInfo">
+          <Key>
+            <PropertyRef Name="CommentId" />
+          </Key>
+          <Property Name="CommentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CommentDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CommentTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CommentUser" Type="Int32" Nullable="false" />
+          <Property Name="PostId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="PostInfo" Relationship="Self.FK_CommentInfo_PostInfo" FromRole="CommentInfo" ToRole="PostInfo" />
+          <NavigationProperty Name="UserInfo" Relationship="Self.FK_CommentInfo_UserInfo" FromRole="CommentInfo" ToRole="UserInfo" />
+        </EntityType>
+        <EntityType Name="PostInfo">
+          <Key>
+            <PropertyRef Name="PostId" />
+          </Key>
+          <Property Name="PostId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PostTitle" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PostBody" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PostDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="PostStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="CommentInfoes" Relationship="Self.FK_CommentInfo_PostInfo" FromRole="PostInfo" ToRole="CommentInfo" />
+          <NavigationProperty Name="UserInfo" Relationship="Self.FK_PostInfo_UserInfo" FromRole="PostInfo" ToRole="UserInfo" />
+          <NavigationProperty Name="ReactInfoes" Relationship="Self.FK_ReactInfo_PostInfo" FromRole="PostInfo" ToRole="ReactInfo" />
+        </EntityType>
+        <EntityType Name="ReactInfo">
+          <Key>
+            <PropertyRef Name="ReactId" />
+          </Key>
+          <Property Name="ReactId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Like" Type="Int32" Nullable="false" />
+          <Property Name="DisLike" Type="Int32" Nullable="false" />
+          <Property Name="PostId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="PostInfo" Relationship="Self.FK_ReactInfo_PostInfo" FromRole="ReactInfo" ToRole="PostInfo" />
+        </EntityType>
+        <EntityType Name="UserInfo">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="CommentInfoes" Relationship="Self.FK_CommentInfo_UserInfo" FromRole="UserInfo" ToRole="CommentInfo" />
+          <NavigationProperty Name="PostInfoes" Relationship="Self.FK_PostInfo_UserInfo" FromRole="UserInfo" ToRole="PostInfo" />
+        </EntityType>
+        <Association Name="FK_CommentInfo_PostInfo">
+          <End Role="PostInfo" Type="Self.PostInfo" Multiplicity="1" />
+          <End Role="CommentInfo" Type="Self.CommentInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PostInfo">
+              <PropertyRef Name="PostId" />
+            </Principal>
+            <Dependent Role="CommentInfo">
+              <PropertyRef Name="PostId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CommentInfo_UserInfo">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="CommentInfo" Type="Self.CommentInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="CommentInfo">
+              <PropertyRef Name="CommentUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PostInfo_UserInfo">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="PostInfo" Type="Self.PostInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="PostInfo">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ReactInfo_PostInfo">
+          <End Role="PostInfo" Type="Self.PostInfo" Multiplicity="1" />
+          <End Role="ReactInfo" Type="Self.ReactInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PostInfo">
+              <PropertyRef Name="PostId" />
+            </Principal>
+            <Dependent Role="ReactInfo">
+              <PropertyRef Name="PostId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BlogManagementDbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CommentInfoes" EntityType="Self.CommentInfo" />
+          <EntitySet Name="PostInfoes" EntityType="Self.PostInfo" />
+          <EntitySet Name="ReactInfoes" EntityType="Self.ReactInfo" />
+          <EntitySet Name="UserInfoes" EntityType="Self.UserInfo" />
+          <AssociationSet Name="FK_CommentInfo_PostInfo" Association="Self.FK_CommentInfo_PostInfo">
+            <End Role="PostInfo" EntitySet="PostInfoes" />
+            <End Role="CommentInfo" EntitySet="CommentInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CommentInfo_UserInfo" Association="Self.FK_CommentInfo_UserInfo">
+            <End Role="UserInfo" EntitySet="UserInfoes" />
+            <End Role="CommentInfo" EntitySet="CommentInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PostInfo_UserInfo" Association="Self.FK_PostInfo_UserInfo">
+            <End Role="UserInfo" EntitySet="UserInfoes" />
+            <End Role="PostInfo" EntitySet="PostInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ReactInfo_PostInfo" Association="Self.FK_ReactInfo_PostInfo">
+            <End Role="PostInfo" EntitySet="PostInfoes" />
+            <End Role="ReactInfo" EntitySet="ReactInfoes" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BlogManagementDbModelStoreContainer" CdmEntityContainer="BlogManagementDbEntities">
+          <EntitySetMapping Name="CommentInfoes">
+            <EntityTypeMapping TypeName="BlogManagementDbModel.CommentInfo">
+              <MappingFragment StoreEntitySet="CommentInfo">
+                <ScalarProperty Name="CommentId" ColumnName="CommentId" />
+                <ScalarProperty Name="CommentDetails" ColumnName="CommentDetails" />
+                <ScalarProperty Name="CommentTime" ColumnName="CommentTime" />
+                <ScalarProperty Name="CommentUser" ColumnName="CommentUser" />
+                <ScalarProperty Name="PostId" ColumnName="PostId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PostInfoes">
+            <EntityTypeMapping TypeName="BlogManagementDbModel.PostInfo">
+              <MappingFragment StoreEntitySet="PostInfo">
+                <ScalarProperty Name="PostId" ColumnName="PostId" />
+                <ScalarProperty Name="PostTitle" ColumnName="PostTitle" />
+                <ScalarProperty Name="PostBody" ColumnName="PostBody" />
+                <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="PostStatus" ColumnName="PostStatus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ReactInfoes">
+            <EntityTypeMapping TypeName="BlogManagementDbModel.ReactInfo">
+              <MappingFragment StoreEntitySet="ReactInfo">
+                <ScalarProperty Name="ReactId" ColumnName="ReactId" />
+                <ScalarProperty Name="Like" ColumnName="Like" />
+                <ScalarProperty Name="DisLike" ColumnName="DisLike" />
+                <ScalarProperty Name="PostId" ColumnName="PostId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserInfoes">
+            <EntityTypeMapping TypeName="BlogManagementDbModel.UserInfo">
+              <MappingFragment StoreEntitySet="UserInfo">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

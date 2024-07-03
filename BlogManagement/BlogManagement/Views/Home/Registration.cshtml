@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Registration";
+    Layout = "~/Views/Shared/_OuterLayout.cshtml";
+}
+
+<center>
+    <div class="container w-50">
+        <font size="6">Regestration Page</font>
+        <hr />
+    </div>
+</center>
+<div class="container container-fluid">
+    <form method="post">
+        <div>
+            First Name:
+            <input type="text" class="form-control" name="FirstName" placeholder="Enter your first name" value="@Model.FirstName" />
+            <span class="text-danger">@Html.ValidationMessage("FirstName")</span>
+        </div>
+        <div>
+            Last Name:
+            <input type="text" class="form-control" name="LastName" placeholder="Enter your last name" value="@Model.LastName"/>
+            <span class="text-danger">@Html.ValidationMessage("LastName")</span>
+        </div>
+        <div>
+            Email:
+            <input type="text" class="form-control" name="Email" placeholder="Enter your email" value="@Model.Email"/>
+            <span class="text-danger">@Html.ValidationMessage("Email")</span>
+        </div>
+        <div>
+            Username:
+            <input type="text" class="form-control" name="UserName" placeholder="Enter your username" value="@Model.UserName"/>
+            <span class="text-danger">@Html.ValidationMessage("UserName")</span>
+        </div>
+        <div>
+            Phone Number:
+            <input type="text" class="form-control" name="Phone" placeholder="Enter your phone number" value="@Model.Phone"/>
+            <span class="text-danger">@Html.ValidationMessage("Phone")</span>
+        </div>
+        <div>
+            Password:
+            <input type="password" class="form-control" name="Password" placeholder="Enter your password" />
+            <span class="text-danger">@Html.ValidationMessage("Password")</span>
+        </div>
+        <br />
+        <div>
+            <input type="submit" class="btn btn-outline-primary" value="Create New Account" />
+        </div>
+    </form>
+</div>

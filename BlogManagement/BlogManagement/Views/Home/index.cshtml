@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Login Page";
+    Layout = "~/Views/Shared/_OuterLayout.cshtml";
+}
+
+<center>
+    <div class="container w-50">
+        <font size="6">Login Page</font>
+        <hr />
+    </div>
+</center>
+@if (TempData["Msg"] != null)
+{
+    <div>
+        <div class="alert alert-danger">@TempData["Msg"]</div>
+    </div>
+}
+<div class="container container-fluid">
+    <form method="post">
+        <div>
+            Username:
+            <input type="text" class="form-control" name="UserName" placeholder="Enter your username" value="@Model.UserName"/>
+            <span class="text-danger">@Html.ValidationMessage("UserName")</span>
+        </div>
+        <div>
+            Password:
+            <input type="password" class="form-control" name="Password" placeholder="Enter your password" value="@Model.Password"/>
+            <span class="text-danger">@Html.ValidationMessage("Password")</span>
+        </div>
+        <br />
+        <div>
+            <input type="submit" class="btn btn-outline-primary" value="Login" />
+        </div>
+        <div>
+            Didn't have Account <a href="/Home/Registration">Create Account</a>
+        </div>
+    </form>
+</div>

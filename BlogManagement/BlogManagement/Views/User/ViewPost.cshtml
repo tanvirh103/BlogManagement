@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "ViewPost";
+    Layout = "~/Views/Shared/_OuterLayout.cshtml";
+}
+<center>
+    <div class="container w-50">
+        <font size="6">Post Details</font><hr /><br />
+    </div>
+</center>
+<div class="container">
+    <form method="post">
+
+        <div>
+            Post Title:@Model.PostTitle
+        </div>
+        <div>
+            Post Body:@Model.PostBody
+        </div>
+        <br />
+        <div class="container container-fluid">
+            Comments:
+            @if (Model.Comments != null)
+            {
+                foreach (var x in Model.Comments)
+                {
+                    <div>
+                        Username: @x.UserName
+                        <br />
+                        Posted no: @x.CommentTime
+                    </div>
+                    <div>
+                        Comment: @x.CommentDetails
+                    </div>
+                    <br />
+                }
+
+            }
+            else
+            {
+                <p>No Comment found</p>
+            }
+
+        </div>
+        <br />
+
+        <div class="container container-fluid">
+            Your Comment:
+            <textarea class="form-control" name="CommentDetails" placeholder="Enter your comment"></textarea>
+            <span class="text-danger">@Html.ValidationMessage("CommentDetails")</span>
+        </div>
+        <br />
+        <div>
+            <input type="hidden" name="PostId" value="@Model.PostId" />
+            <input type="submit" class="btn btn-outline-primary" value="Post Comment">
+        </div>
+    </form>
+</div>
+
